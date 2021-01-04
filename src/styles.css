@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;}
+body { margin: 0 auto; font-family: Roboto, "Helvetica Neue", sans-serif; }
+div#mat-tab-label-0-0 {
+    margin-left: 2%;
+}
+div#mat-tab-label-0-1 {
+    margin-left: 5%;
+}
+div#mat-tab-label-0-2 {
+    margin-left: 5%;
+}
+div#mat-tab-label-0-3 {
+    margin-left: 5%;
+}
+div#mat-tab-label-0-4 {
+    margin-left: 5%;
+}
+div#mat-tab-label-0-5 {
+    margin-left: 5%;
+}

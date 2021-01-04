@@ -1,0 +1,279 @@
+<div class='container'>
+  <div class='header'>
+    <mat-toolbar>
+      <span>Set a Frequency</span>
+    </mat-toolbar>
+  </div>
+  <div class='tabs'>
+    <mat-tab-group animationDuration="0ms">
+      <mat-tab id="daily" daily label="Daily">
+        <div class="daily">
+          <div class="superTime">
+            <div class="time">
+              Every <input class="number" type='number'> day at <input type="time">
+            </div>
+          </div>
+          <div class="formField">
+            <div class="innerFormField">
+              <span class="startsFrom">STARTS FROM</span><br />
+              <div class="startDateTime">
+                <input class="startDate" type="date">
+                <input class="startTime" type="time">
+              </div>
+              <div class="endTopics"><span class="endsBy">ENDS BY</span>
+                <span class="endsAfter">ENDS AFTER</span>
+                <span class="onGoing">ONGOING</span>
+              </div>
+              <mat-radio-group aria-label="Select an option">
+                <mat-radio-button id="radio1" value="1">
+                  <div class="endDateTime">
+                    <input class="endDate" type="date">
+                    <input class="endTime" type="time">
+                  </div>
+                </mat-radio-button>
+                <mat-radio-button id="radio2" value="2">
+                  <div class="occurence">
+                    <input class="number" type="number"> Occurences
+                  </div>
+                </mat-radio-button>
+                <mat-radio-button id="radio3" value="3">
+                  <pre class="onGoingCh">
+  The responsibility will 
+  perpetually exist.</pre>
+                </mat-radio-button>
+              </mat-radio-group>
+              <br />
+            </div>
+          </div>
+
+          <div class="content">
+            This responsibility would be marked as <i style="color:red">failed </i> <input type="number"> day after the
+            due date. if not
+            completed.
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footerData">
+            You have selected a <b>daily</b> frequency
+            <button id="button1" mat-button primary>esc to cancel</button>
+            <button id="button2" mat-button primary>NEXT</button>
+          </div>
+        </div>
+      </mat-tab>
+      <div id="weekly">
+        <mat-tab label="Weekly">
+          <div class="check-box">
+            <section class="example-section">
+              <mat-checkbox class="example-margin">Monday</mat-checkbox>
+              <mat-checkbox class="example-margin">Tuesday</mat-checkbox>
+              <mat-checkbox class="example-margin">Wednesday</mat-checkbox>
+              <mat-checkbox class="example-margin">Thursday</mat-checkbox>
+              <mat-checkbox class="example-margin">Friday</mat-checkbox>
+              <mat-checkbox class="example-margin">Saturday</mat-checkbox>
+              <mat-checkbox class="example-margin">Sunday</mat-checkbox>
+            </section>
+          </div>
+          <div class="superTime">
+            <div class="time">
+              Every <input class="number" type='number'> day at <input type="time">
+            </div>
+          </div>
+          <div class="formField">
+            <div class="innerFormField">
+              <span class="startsFrom">STARTS FROM</span><br />
+              <div class="startDateTime">
+                <input class="startDate" type="date">
+                <input class="startTime" type="time">
+              </div>
+              <div class="endTopics"><span class="endsBy">ENDS BY</span>
+                <span class="endsAfter">ENDS AFTER</span>
+                <span class="onGoing">ONGOING</span>
+              </div>
+              <mat-radio-group aria-label="Select an option">
+                <mat-radio-button id="radio1" value="1">
+                  <div class="endDateTime">
+                    <input class="endDate" type="date">
+                    <input class="endTime" type="time">
+                  </div>
+                </mat-radio-button>
+                <mat-radio-button id="radio2" value="2">
+                  <div class="occurence">
+                    <input class="number" type="number"> Occurences
+                  </div>
+                </mat-radio-button>
+                <mat-radio-button id="radio3" value="3">
+                  <pre class="onGoingCh">
+    The responsibility will 
+    perpetually exist.</pre>
+                </mat-radio-button>
+              </mat-radio-group>
+              <br />
+            </div>
+          </div>
+          <div class="footer">
+            <div class="footerData">
+              You have selected a <b>weekly</b> frequency
+              <button id="button1" mat-button primary>esc to cancel</button>
+              <button id="button2" mat-button primary>NEXT</button>
+            </div>
+          </div>
+        </mat-tab>
+      </div>
+
+      <mat-tab id="monthly" label="Monthly">
+        <div class="check-box">
+          <section class="example-section">
+            <mat-checkbox class="example-margin">Jan</mat-checkbox>
+            <mat-checkbox class="example-margin">Feb</mat-checkbox>
+            <mat-checkbox class="example-margin">Mar</mat-checkbox>
+            <mat-checkbox class="example-margin">Apr</mat-checkbox>
+            <mat-checkbox class="example-margin">May</mat-checkbox>
+            <mat-checkbox class="example-margin">June</mat-checkbox><br />
+            <mat-checkbox class="example-margin">July</mat-checkbox>
+            <mat-checkbox class="example-margin">Aug</mat-checkbox>
+            <mat-checkbox class="example-margin">Sep</mat-checkbox>
+            <mat-checkbox class="example-margin">Oct</mat-checkbox>
+            <mat-checkbox class="example-margin">Nov</mat-checkbox>
+            <mat-checkbox class="example-margin">Dec</mat-checkbox>
+          </section>
+        </div>
+        <div class="superTime">
+          <div class="time">
+            Day <input class="number" type='number'> of <input type="time">
+          </div>
+        </div>
+        <div class="formField">
+          <div class="innerFormField">
+            <span class="startsFrom">STARTS FROM</span><br />
+            <div class="startDateTime">
+              <input class="startDate" type="date">
+              <input class="startTime" type="time">
+            </div>
+            <div class="endTopics"><span class="endsBy">ENDS BY</span>
+              <span class="endsAfter">ENDS AFTER</span>
+              <span class="onGoing">ONGOING</span>
+            </div>
+            <mat-radio-group aria-label="Select an option">
+              <mat-radio-button id="radio1" value="1">
+                <div class="endDateTime">
+                  <input class="endDate" type="date">
+                  <input class="endTime" type="time">
+                </div>
+              </mat-radio-button>
+              <mat-radio-button id="radio2" value="2">
+                <div class="occurence">
+                  <input class="number" type="number"> Occurences
+                </div>
+              </mat-radio-button>
+              <mat-radio-button id="radio3" value="3">
+                <pre class="onGoingCh">
+      The responsibility will 
+      perpetually exist.</pre>
+              </mat-radio-button>
+            </mat-radio-group>
+            <br />
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footerData">
+            You have selected a <b>monthly</b> frequency
+            <button id="button1" mat-button primary>esc to cancel</button>
+            <button id="button2" mat-button primary>NEXT</button>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab id="yearly" label="Yearly">
+        <div class="check-box">
+          <section class="example-section">
+            <mat-checkbox class="example-margin">Jan</mat-checkbox>
+            <mat-checkbox class="example-margin">Feb</mat-checkbox>
+            <mat-checkbox class="example-margin">Mar</mat-checkbox>
+            <mat-checkbox class="example-margin">Apr</mat-checkbox>
+            <mat-checkbox class="example-margin">May</mat-checkbox>
+            <mat-checkbox class="example-margin">June</mat-checkbox><br />
+            <mat-checkbox class="example-margin">July</mat-checkbox>
+            <mat-checkbox class="example-margin">Aug</mat-checkbox>
+            <mat-checkbox class="example-margin">Sep</mat-checkbox>
+            <mat-checkbox class="example-margin">Oct</mat-checkbox>
+            <mat-checkbox class="example-margin">Nov</mat-checkbox>
+            <mat-checkbox class="example-margin">Dec</mat-checkbox>
+          </section>
+        </div>
+        <div class="superTime">
+          <div class="time">
+            Every <input class="number" type='number'> Year of Day <input class="number" type='number'> of <input
+              type="time">
+          </div>
+        </div>
+        <div class="formField">
+          <div class="innerFormField">
+            <span class="startsFrom">STARTS FROM</span><br />
+            <div class="startDateTime">
+              <input class="startDate" type="date">
+              <input class="startTime" type="time">
+            </div>
+            <div class="endTopics"><span class="endsBy">ENDS BY</span>
+              <span class="endsAfter">ENDS AFTER</span>
+              <span class="onGoing">ONGOING</span>
+            </div>
+            <mat-radio-group aria-label="Select an option">
+              <mat-radio-button id="radio1" value="1">
+                <div class="endDateTime">
+                  <input class="endDate" type="date">
+                  <input class="endTime" type="time">
+                </div>
+              </mat-radio-button>
+              <mat-radio-button id="radio2" value="2">
+                <div class="occurence">
+                  <input class="number" type="number"> Occurences
+                </div>
+              </mat-radio-button>
+              <mat-radio-button id="radio3" value="3">
+                <pre class="onGoingCh">
+      The responsibility will 
+      perpetually exist.</pre>
+              </mat-radio-button>
+            </mat-radio-group>
+            <br />
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footerData">
+            You have selected a <b>yearly</b> frequency
+            <button id="button1" mat-button primary>esc to cancel</button>
+            <button id="button2" mat-button primary>NEXT</button>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab id="oneTime" label="One Time">
+        <div class="formField">
+          <div class="innerFormField">
+            <div class="startDateTime">
+              <input class="startDate" type="date">
+              <input class="startTime" type="time">
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          This responsibility would be marked as <i style="color:blue">complete </i> <input type="number"> day after the
+          due date. if not
+          completed.
+        </div>
+        <div class="content">
+          This responsibility would be marked as <i style="color:red">failed </i> <input type="number"> day after the
+          due date. if not
+          completed.
+        </div>
+        <div class="footer">
+          <div class="footerData">
+            You have selected a <b>one time</b> frequency
+            <button id="button1" mat-button primary>esc to cancel</button>
+            <button id="button2" mat-button primary>NEXT</button>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab id="on-completion" label="On Completion of">On Completion of</mat-tab>
+
+    </mat-tab-group>
+  </div>
+</div>
